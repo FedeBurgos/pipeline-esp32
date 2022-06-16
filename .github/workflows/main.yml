@@ -41,3 +41,15 @@ jobs:
       - name: Pio Run
         run: |
           pio run --environment nodemcu-32s
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: cpp
+
+      # Here is where you build your code
+      - run: |
+          pio run
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
