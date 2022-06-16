@@ -66,7 +66,7 @@ jobs:
 
     - run: |
           echo "Run, Build Application using script"
-          pio run --environment nodemcu-32s
+          ./autobuild.sh
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
