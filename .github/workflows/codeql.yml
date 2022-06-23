@@ -75,9 +75,9 @@ jobs:
     #    pip install platformio
     #    pip install PyGithub
 
-    #- name: Pio Run
-    #  run: |
-    #    pio run --environment nodemcu-32s
+    - name: Pio Run
+      run: |
+        pio run --environment nodemcu-32s
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
