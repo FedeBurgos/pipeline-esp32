@@ -41,6 +41,6 @@ jobs:
       - name: Pio Run
         run: |
           pio run --environment nodemcu-32s
-      - name: Run Unit Test
-        run: |
-          pio test --without-building --without-uploading
+      #- name: Run Unit Test
+      #  run: |
+      #    pio test --without-building --without-uploading
